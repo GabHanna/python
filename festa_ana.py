@@ -23,8 +23,12 @@ if(pedidoMinimoPizza >= pedidoPizza):
 if(pedidoMinimoBebida < pedidoBebida):
     print("Ana comprou mais bebidas que o necessario!")
 
-if(pedidoMinimoBolo <= pedidoBolo):
+if(pedidoMinimoBolo < pedidoBolo):
     print("Ana excedeu a compra de bolos!")
+elif(pedidoMinimoBolo == pedidoBolo):
+    print("Ana comprou a quantidade minima de bolos")
+else:
+    print("Ana nao comprou bolos suficiente")
 
 if(pedidoMinimoDoce > pedidoDoce):
     print("Ana não comprou doces suficientes!")
